@@ -1,4 +1,4 @@
-not-an-http-service
+not-a-web-framework
 ===================
 A [gb](http://getgb.io/)-vendored version of the [not-a-web-framework](https://github.com/oleksandr/not-a-web-framework) with minor modifications
 
