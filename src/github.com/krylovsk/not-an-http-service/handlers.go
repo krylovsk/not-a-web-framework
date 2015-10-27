@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/gorilla/context"
+	"github.com/gorilla/mux"
 )
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
@@ -19,6 +19,7 @@ func healthHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func adminHandler(w http.ResponseWriter, r *http.Request) {
-	user := context.Get(r, "user")
+	params := mux.Vars(r)
+	user := params["user"]
 	json.NewEncoder(w).Encode(user)
 }
