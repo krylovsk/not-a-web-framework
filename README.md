@@ -1,6 +1,6 @@
 not-a-web-framework
 ===================
-A [gb](http://getgb.io/)-vendored version of the [not-a-web-framework](https://github.com/oleksandr/not-a-web-framework) with minor modifications
+A [go vendor](https://golang.org/s/go15vendor)version of the [not-a-web-framework](https://github.com/oleksandr/not-a-web-framework) with minor modifications
 
 * `gorilla/mux` as a router instead of the `github.com/julienschmidt/httprouter`
 
